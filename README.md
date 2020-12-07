@@ -15,7 +15,19 @@ Description goes here
 Here's how you make code look like code:
 
 ```python
-Code goes here
+import board
+import neopixel
+import time
+
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+
+while True:
+    print("Make it blue!")
+    dot.fill((0,0,255))
+    time.sleep(.5)
+    print("Make it turquoise")
+    dot.fill((0,229,238))
+    time.sleep(.5)
 
 ```
 
